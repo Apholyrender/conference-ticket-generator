@@ -1,0 +1,44 @@
+.tIcket-selector {
+  width: 100%;
+  height: 110px;
+  border: 1px solid #197686;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.tIcket-selector:hover {
+  background: #12464e;
+}
+
+.ticket-selected {
+  background: #12464e;
+}
+
+.ticket-idle {
+  background: transparent;
+}
+
+.ticket-selector-cost {
+  color: white;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26.4px;
+  letter-spacing: 0%;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.ticket-selector-access,
+.ticket-selector-count {
+  color: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  cursor: pointer;
+  text-transform: uppercase;
+}

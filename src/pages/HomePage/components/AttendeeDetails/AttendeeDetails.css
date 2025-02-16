@@ -1,0 +1,247 @@
+/* General Styling */
+body {
+  background: linear-gradient(135deg, #0c192c, #08151f);
+  color: #d4e0f7;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container */
+.attendee-details {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #08252B;
+  border: #0E464F;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.2);
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Title */
+.text-info {
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0c192c;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  width: 50%;
+  height: 4px;
+  background: #00aaff;
+  border-radius: 5px;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.upload-box {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #00aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: rgba(0, 170, 255, 0.1);
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.upload-text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Form Styling */
+.attendee-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+  background: #08151f;
+  color: white;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  background: #08151f;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.email-icon {
+  color: #00aaff;
+  padding: 5px;
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding: 5px;
+}
+
+.form-textarea {
+  padding: 10px;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+  background: #08151f;
+  color: white;
+  height: 80px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-outline, .button-fill {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-outline {
+  background: #444;
+  color: white;
+}
+
+.button-outline:hover {
+  background: #666;
+}
+
+.button-fill {
+  background: #00aaff;
+  color: white;
+}
+
+.button-fill:hover {
+  background: #0088cc;
+}
+
+/* ===== MEDIA QUERIES FOR RESPONSIVENESS ===== */
+
+/* Small screens (phones, 320px - 480px) */
+@media screen and (max-width: 480px) {
+  .attendee-details {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .text-info {
+    font-size: 18px;
+  }
+
+  .upload-box {
+    height: 150px;
+  }
+
+  .upload-text {
+    font-size: 12px;
+  }
+
+  .form-label {
+    font-size: 12px;
+  }
+
+  .form-input, .email-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-outline, .button-fill {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .attendee-details {
+    max-width: 85%;
+    padding: 20px;
+  }
+
+  .text-info {
+    font-size: 20px;
+  }
+
+  .upload-box {
+    height: 180px;
+  }
+
+  .upload-text {
+    font-size: 13px;
+  }
+
+  .form-label {
+    font-size: 13px;
+  }
+
+  .form-input, .email-input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .button-outline, .button-fill {
+    padding: 12px;
+  }
+}

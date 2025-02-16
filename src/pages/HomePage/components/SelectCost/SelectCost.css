@@ -1,0 +1,223 @@
+.select-cost {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-card {
+  border: 1px solid #07373f;
+  border-radius: 24px;
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(
+    circle at center,
+    rgba(36, 160, 181, 0.2) 0%,
+    rgba(36, 160, 181, 0) 100%
+  );
+  background-color: #0a0c11 0.1;
+}
+
+.event-title {
+  color: #fafafa;
+  font-family: "Road Rage", serif;
+  font-size: 62px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.event-details {
+  color: #fafafa;
+  font-family: "roboto", serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.horizontal-line {
+  width: 100%; /* Full width */
+  height: 2px; /* Line thickness */
+  background-color: #07373f; /* Line color */
+  margin: 32px 0; /* Add spacing */
+}
+
+.select-ticket-choice-container {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.select-ticket-label-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--color-grey-98, #fafafa);
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.select-ticket-buttons {
+  background: #052228;
+  border: 1px solid #07373f;
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px;
+  width: 100%;
+}
+
+.select-ticket-count-container {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.input-label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.select-number-label-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--color-grey-98, #fafafa);
+  text-align: left;
+}
+
+.select-ticket-label-text-error {
+  color: rgb(250, 178, 178);
+  font-size: 12px;
+}
+
+.ticket-count-input {
+  width: 100%;
+  height: 48px;
+  padding: 8px;
+  border: 1px solid #07373f;
+  color: var(--color-white-solid, #ffffff);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.ticket-count-input:focus {
+  border: 1px solid #076d7f;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.button-outline {
+  border: 1px solid #24a0b5;
+  width: 50%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #24a0b5;
+  font-family: JejuMyeongjo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: #54ddf5;
+}
+
+.button-fill {
+  border: none;
+  width: 50%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: JejuMyeongjo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  background-color: #24a0b5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-fill:hover {
+  background-color: #54ddf5;
+}
+
+@media (max-width: 600px) {
+  .event-card {
+    padding: 16px 24px;
+  }
+
+  .event-title {
+    color: #fafafa;
+    font-family: "Road Rage", serif;
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .event-details {
+    color: #fafafa;
+    font-family: "roboto", serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 8px;
+  }
+
+  .select-ticket-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .input-label-container {
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-outline {
+    width: 100%;
+  }
+
+  .button-fill {
+    width: 100%;
+  }
+}
